@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height:100%">
+        
+    <svg width=100% height=1000>
+        <defs>
+            <linearGradient id="color" x1="0%" y1="0%" x2="100%" y2="100%"/>
+                <stop offset="0%" stop-color=green/>
+                <stop offset="50%" stop-color=yellow/>
+                <stop offset="100%" stop-color=red/>
+            </linearGradient>   
+        </defs>
+        <defs>
+        <g id="brick">    
+            <circle cx=200 cy=100 r=100 stroke=red fill=yellow />
+            <rect x=50 y=200 width=300 height=500 rx=150 ry=150  stroke=red fill=yellow />
+            <polyline points='50,400 50,700 350,700 350,400' stroke=red fill=yellow />
+        </g>
+        </defs>
+
+        <g transform='translate(400,0)' fill="url(#color)">    
+                <circle cx=200 cy=100 r=100 stroke=red fill=yellow />
+                <rect x=50 y=200 width=300 height=500 rx=150 ry=150  stroke=red fill=yellow />
+                <polyline points='50,400 50,700 350,700 350,400' stroke=red fill=yellow />
+        </g>
+
+        <g transform='translate(1000,00)' fill=red>    
+                <circle cx=200 cy=100 r=100 stroke=red fill=yellow />
+                <rect x=50 y=200 width=300 height=500 rx=150 ry=150  stroke=red fill=yellow />
+                <polyline points='50,400 50,700 350,700 350,400' stroke=red fill=yellow />
+        </g>
+        <use xlink:href="#brick" x="50" y="100"/>
+        <svg
+
+        
+
+    </svg>
+</div>
+</body>
+</html>

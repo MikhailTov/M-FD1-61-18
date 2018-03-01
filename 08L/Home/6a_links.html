@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        div.method1 a {
+         color:green;
+         border-right:solid 4px red;
+         padding: 5px 10px 5px 10px;
+         }
+        div.method1 a:last-child {border-right: 0}
+        div.method1 a:hover {color:red;}
+
+
+        div.method2 a {
+         float: left;
+         color:green;
+         box-shadow: 4px 0   0 red;
+         padding: 5px 10px 5px 10px;
+         }
+         div.method2 a:hover {color:red;}
+         div.method2 span a {box-shadow:none;}
+
+
+         div.method3 a {
+         color:green;
+         border-right:solid 4px red;
+         padding: 5px 10px 5px 10px;
+         }
+         div.method3 a:hover {color:red;}
+         div.method3 span a {border-right: none;}
+    </style>
+    <title>links</title>
+</head>
+<body>
+    <div class="method1"><!--строка оформлена через тег <a>. границы залиты путем задания св-ва BORDER-RIGHT. последняя граница отсутствует путем прописания псевдокласса FIRST-CHILD-->
+        <a href="">Первая строчка</a>
+        <a href="">вторая строчка</a>
+        <a href="">третья строчка</a>
+        <a href="">Четвертая строчка</a>
+        <a href="">Пятая строчка</a>  
+    </div>
+    <br>
+
+    <div class="method2"><!--строка выстроена через <div> свойоство FLOAT, границы заданы свойством BOX-SHADOW -->
+        <div><a href="">Первая строчка</a></div>
+        <div><a href="">вторая строчка</a></div>
+        <div><a href="">третья строчка</a></div>
+        <div><a href="">Четвертая строчка</a></div>
+        <div><span><a href="">Пятая строчка</a></span></div>
+    </div>
+    <br><br>
+
+    <div class="method3"><!--Строка выстроена в виде таблицы, последняя граница отменена путем добвления тега <SPAN>-->
+        <table>
+        <tr>
+            <td><a href="">Первая строчка</a></td>
+            <td><a href="">вторая строчка</a></td>
+            <td><a href="">третья строчка</a></td>
+            <td><a href="">Четвертая строчка</a></td>
+            <td><span><a href="">Пятая строчка</a></span></td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>

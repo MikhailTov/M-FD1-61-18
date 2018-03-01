@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.1.css" rel="stylesheet">
+    <title>maket_form</title>
+</head>
+<body>
+    <form>
+        <div class="container">                      
+            <div>Для публикации вашей статьи, заполните пожалуйста следующую форму:</div>
+                <div class="table">    
+                    <div class="row">
+                        <label class="cell1">Название статьи:</label>
+                        <input class="cell2" name="name" style="text">
+                    </div>
+                    
+                    <div class="row">
+                        <label class="cell1">Рубрика:</label>
+                        <select class="cell2" name="rub">
+                            <option value="1">Компьютерная техника</option>
+                            <option value="2">Грфика и дизайн</option>
+                            <option value="3">Программирование</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <label class="cell1">Публикация:</label>
+                            <div class="item"><input type="radio" name="site" value=1>на сайте</div>
+                            <div class="item"><input type="radio" name="journal" value=2>в журнале</div>
+                            <div class="item"><input type="radio" name="both" value=3 checked>на сайте и в журнале</div>
+                    </div> 
+    
+                    <div class="row">
+                        <label class="cell4">Разрешить комментарии:</label> 
+                        <input class="cell3" type="checkbox" name="onle" checked>
+                    </div>
+                </div>
+            
+                <label class="">Текст статьи:</label><br>
+                <textarea class="row" name="text"></textarea>
+                <input type="submit" value="Опубликовать">
+        </div>
+    </form>  
+</body>
+</html> 

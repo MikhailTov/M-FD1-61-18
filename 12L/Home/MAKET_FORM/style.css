@@ -1,0 +1,21 @@
+body {font-size:18  px;}
+.container {
+    min-width: 300px;
+    max-width: 1000px;
+    border: double red 3px;
+    padding: 10px;
+    margin: 0 auto;  
+    
+}
+
+.ch {
+    display: inline-block;
+    width:200px;
+}
+input {
+    display: inline-block;
+    width: calc();
+
+}
+
+

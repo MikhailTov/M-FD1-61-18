@@ -1,0 +1,74 @@
+
+body {
+    text-align: center;
+    position: relative;
+}
+.element {  
+    height: 100%;  
+    margin: 0 auto;
+    width: 100%;     
+}    
+
+@keyframes MyAnimation1 {
+    from { background-color: red;}
+    to { background-color: yellow;}
+}
+#anim1 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: solid 5px deeppink;
+    position: relative;
+    animation: MyAnimation1 1s infinite;
+}
+
+@keyframes MyAnimation2
+{
+    from { background-color: orchid; transform: scale(1) }
+    to { background-color: rgb(222, 206, 135); transform: scale(1.2)}
+}
+#anim2 {
+    display: inline-block; 
+    width: 400px;
+    height: 600px;
+    background-color: orchid;
+    position: relative;
+}
+
+@keyframes MyAnimation3
+{
+    from { background-color: blue; }
+    to { background-color: rgb(135, 222, 193); }
+}
+
+#anim3 {
+    float: right;
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+}
+.element:hover #anim2 {
+    animation: MyAnimation2 3s infinite;
+    }
+.element:hover #anim3 {
+    animation: MyAnimation3 5s infinite;
+}
+
+#circle { 
+    width: 100px;
+    height: 100px;
+    background: red;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    left: 5%;
+    animation: move 5s infinite;
+ } 
+
+ @keyframes move
+  {
+    from {left: 5%;transform: scale(1.0); background: red; }
+    to {left: 85%; transform: scale(1.5); background: teal}
+  }

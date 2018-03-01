@@ -1,0 +1,44 @@
+svg#triangle {
+    height: 250px;
+    width: 260px;
+  }
+  
+  #triangle-path {
+    fill: red;
+    stroke: pink;
+    stroke-width: 10px;
+
+    stroke-linecap: butt;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+    
+  #triangle-path:hover {
+    fill: pink;
+
+  }
+  
+  svg#rectangle {
+    height: 250px;
+    width: 250px;
+  }
+  
+  #rectangle {
+    stroke-opacity:null;
+    fill-opacity:null;
+    stroke:darkblue;
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+  }
+  
+  #rectangle:hover {
+    fill: pink;
+    stroke-width: 10;
+    transform: scale(1.2);
+  }

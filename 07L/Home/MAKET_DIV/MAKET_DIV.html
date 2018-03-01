@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            color: #000000;
+            font-family: Trebuchet MS, Arial, Times New Roman;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            background: lightblue;
+            overflow: hidden;
+            
+        }
+        .header {
+            background: lightblue;
+            color:blue;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            min-width: 300px;
+            height: 40px;
+            font-size: 1.2em;
+            line-height: 40px; 
+        }
+        .sidebar {
+            padding: 0px 0px 0px 10px;
+            width: 200px;
+            float: left;
+            padding-bottom:1000px; margin-bottom:-1000px
+        }
+        .content {
+            background: white url(ball.png) repeat-y 100% 0;
+            margin-left: 210px;
+            padding: 10px;
+            min-width: 500px;
+            padding-bottom:1000px; margin-bottom:-1000px
+        }
+        .clear {
+            clear:both;
+        }
+        .footer {
+            background: lightblue;
+            color:blue;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            height: 40px;
+            font-size: 1.2em;
+            line-height: 40px; 
+            clear:both;
+        }
+    </style>
+    <title>maket_div</title>
+</head>
+<body>
+    <div class="wrap" style="overflow:hidden">
+        <div class="header">Привет участникам соревнований!</div>
+        <div class="main" style="background:#f0e68c">
+            <div class="sidebar">
+                <h3>Виды спорта:</h3>
+                <ul style="color:blue; text-decoration:underline">
+                    <li>конькобежный спорт</li>
+                    <li>биатлон</li>
+                    <li>футбол</li>
+                    <li>стрельба из лука</li>
+                    <li>прыжки в длину</li>
+                    <li>прыжки в высоту</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2 style="text-align:center; color:black; text-transform:uppercase; margin:0">футбол</h2>
+                <img src="Champ.png" alt='football' style="float:left; margin:15px">
+                <p style="color:black">Командный вид спорта — это любой спорт, в котором игроки играют вместе для достижения общей цели.</p>
+                <p style="color:black">Командный вид спорта, является деятельностью, в которой группа лиц, в одной команде,
+                прилагают усилия совместно для достижения конечной цели, которой обычно является победа. 
+                Это может быть сделано в ряде дисциплин, таких как опережение противоположной команды. 
+                Члены команды ставят цели, принимают решения, общаются, решают конфликты и проблемы в благоприятной, 
+                доверительной атмосфере, чтобы достигнуть своих целей. Это можно увидеть в таких видов спорта,
+                как хоккей, футбол, американский футбол, баскетбол, волейбол, теннис, водное поло, лакросс, гребля,
+                регби, крикет, гандбол и многих других.</p>    
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="footer">главное не победа, а участие!</div>
+    </div>
+</body>
+</html>

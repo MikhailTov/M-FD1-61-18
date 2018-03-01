@@ -1,0 +1,80 @@
+.container {  
+}
+
+.image {
+    position: relative;  
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    
+}
+#Man-and-woman {
+    width: 200px;
+    height: 223px;
+    position: absolute;
+    left: 240px;   
+}
+
+#biohazard {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left:0px;
+    top:20px;
+}
+
+#No_smoking {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:100px;
+    left: 120px;
+}
+
+#Yin_and_Yang {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:220px;
+    left: 120px;
+}
+
+/* спан после чекбокса - красный */
+input#People:checked + img {
+    z-index: 0;
+}
+/*после установленного чекбокса - поверх всех */
+input#People:checked + img {
+    z-index: 1;
+}
+
+input#bio + img {
+    z-index: 0;
+}
+input#bio:checked + img {
+    z-index: 1;
+}
+
+input#smoke + img{
+    z-index: 0;
+}
+input#smoke:checked + img {
+    z-index: 1;
+}nput.smoke {
+    visibility: hidden;
+}
+input#smoke + img{
+    z-index: 0;
+}
+input#smoke:checked + img {
+    z-index: 1;
+}
+
+
+input#circle + img{
+    z-index: 0;
+}
+input#circle:checked + img {
+    z-index: 1;
+}
+

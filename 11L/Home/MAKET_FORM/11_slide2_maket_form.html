@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>maket-form</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" >
+
+        <label>Фамилия:</label>
+        <input type="text" name="family">
+        <br>
+        
+        <label>Имя:</label>
+        <input type="text" name="first-name">
+        <br>
+        <label>Отчество:</label>
+        <input type="text" name="second-name">
+        <br>
+        <label>E-mail для связи:</label>
+        <input type="text" name="mail">
+        <br>
+        <label>Согалсен с правилами сайта:</label>
+        <input type="checkbox" name="onlynew" checked>
+        <br>
+        
+        <br>
+        <textarea name="my-textarea" style="resize:none" placeholder="Введите многострочный текст"></textarea><br>
+        <p><label for="myselect">select: </label><select id="my-select" name="sected" size="1" required>
+            <option value="">---------</option>
+            <option value="1">Первая</option>
+            <option value="2" selected>Вторая</option>
+         </select></p>
+         <br>
+         <input type="submit" value="Регистрация">
+    </form>
+    
+</body>
+</html>

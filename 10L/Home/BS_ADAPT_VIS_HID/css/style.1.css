@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+html {
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	font: 14px "sans-serif";
+	text-align: center;
+	background-color: rgb(173, 217, 235);
+}
+
+.ramka {
+	background: linear-gradient(to right, rgb(96, 170, 192) 0%, white 6%, white 94%, rgb(96, 170, 192) 100%);
+	border-radius: 25px;
+	margin: 15px;
+	padding: 10px;
+	min-width: 200px;
+	float: left;
+}
+
+.text {
+	min-width: auto;
+	min-height: auto
+}
+
+.second {
+	height: 500px;
+}
+

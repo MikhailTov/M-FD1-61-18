@@ -1,0 +1,38 @@
+<script>
+    var n = 80;
+    do {
+        console.log(n);
+        n += 2;
+    }
+    while (n < 100); console.log(n);
+</script>
+
+<script>
+    for (var n = 80; n < 100; n += 2) {
+        console.log(n);        
+    } 
+    console.log(n);
+</script>
+
+<script>
+    var num = +prompt("введите число");
+    if (isNaN(num)) {
+        alert("ошибка");
+    }
+    else {
+        for (var c = 7; c <= num; c+=7) {
+            if (c % 7 == 0){
+                console.log(c);
+                }
+        }
+</script>
+<script>
+    var a = [1,2,3,4,5]
+    var sum = 0;
+    for (var i = 0; i < a.length; i++) {
+        sum += a[i];  
+    }
+    console.log(sum);
+</script>
+
+
